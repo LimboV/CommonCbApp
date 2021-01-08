@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--//shape用于定义形状，有四种形状(矩形rectangle| 椭圆oval | 直线line | 圆形ring)-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    android:shape="ring">
+    <solid android:color="@color/cornflowerblue"/>
+    //solid用于设置填充形状的颜色
+    <!-- 矩形的圆角弧度 -->
+    <!--//corners用于创建圆角（只用于形状是矩形）-->
+    <corners
+        android:radius="40dp"/>
+    <!--android:bottomLeftRadius="18dip"
+    android:bottomRightRadius="18dip"
+    android:topLeftRadius="18dip"
+    android:topRightRadius="18dip"-->
+</shape>

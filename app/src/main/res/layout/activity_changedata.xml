@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:background="@drawable/login_bg">
+
+
+
+    <Button
+        android:id="@+id/btn_showInput"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="隐藏按键"/>
+
+    <Button
+        android:id="@+id/btn_9"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/btn_showInput"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/btn_8"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="9"/>
+
+    <Button
+        android:id="@+id/btn_8"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btn_0"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/btn_showInput"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="8"/>
+
+    <Button
+        android:id="@+id/btn_7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btn_delete"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/btn_8"
+        android:layout_toStartOf="@+id/btn_8"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="7"/>
+
+    <Button
+        android:id="@+id/btn_6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btn_9"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/btn_5"
+        android:alpha="0.7"
+
+        android:background="@drawable/selector"
+        android:text="6"/>
+
+    <Button
+        android:id="@+id/btn_5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btn_8"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@id/btn_showInput"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="5"/>
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btn_7"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/btn_8"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="4"/>
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btn_6"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/btn_2"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="3"/>
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btn_5"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/btn_showInput"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="2"/>
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btn_4"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@id/btn_2"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="1"/>
+
+    <Button
+        android:id="@+id/btn_0"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/btn_showInput"
+        android:layout_toStartOf="@+id/btn_showInput"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/btn_0"
+        android:layout_toStartOf="@+id/btn_0"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="回退"/>
+    <TextView
+        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="请输入修改数值"/>
+
+    <EditText
+        android:textColor="@color/black"
+        android:id="@+id/et_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btn_3"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="确认数据"/>
+
+</RelativeLayout>

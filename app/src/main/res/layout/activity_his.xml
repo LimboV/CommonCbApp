@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:layout_height="match_parent">
+    <TextView
+        android:textColor="@color/black"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:id="@+id/tv_Msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:id="@+id/lv_hisData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+    <Button
+        android:id="@+id/btn_reGet"
+        android:text="重新获取"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

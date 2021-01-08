@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_0"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="户名:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cornflowerblue"/>
+
+        <TextView
+            android:id="@+id/tv_hm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/sp_tj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/cornsilk"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ll_0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="线路号码:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/tv_XLH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/red"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="状态:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/tv_meterState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/red"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ll_1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="户号:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/tv_userNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/red"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="序号:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cornflowerblue"/>
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/v4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:text="表号:"
+            android:textColor="@color/cornflowerblue"/>
+
+        <TextView
+            android:id="@+id/tv_meterNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_height="wrap_content"
+            android:text="端口:"
+            android:textColor="@color/cornflowerblue"/>
+
+        <TextView
+            android:id="@+id/tv_IrDAPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="口径:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/cornflowerblue"/>
+
+        <TextView
+            android:id="@+id/tv_caliber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_Msg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cornflowerblue"/>
+
+        <TextView
+            android:id="@+id/tv_phone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cornflowerblue"/>
+
+        <TextView
+            android:id="@+id/tv_phone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ll_4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户地址:"
+            android:textColor="@color/cornflowerblue"/>
+
+        <TextView
+            android:id="@+id/tv_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_Note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ll_5"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="现场备注:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cornflowerblue"/>
+
+        <EditText
+            android:id="@+id/et_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/aqua"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_Note"
+        android:text="图片:"
+        android:textColor="@color/cornflowerblue"/>
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_pic"/>
+
+    <ImageView
+        android:id="@+id/iv_pic2"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tv_pic"
+        android:layout_toRightOf="@id/iv_pic"/>
+
+    <ImageView
+        android:id="@+id/iv_pic3"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tv_pic"
+        android:layout_toRightOf="@id/iv_pic2"/>
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_15"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/underlined"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/v2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本月抄见:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cornflowerblue"/>
+
+        <EditText
+            android:id="@+id/et_thisMouthData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:focusable="false"
+            android:inputType="textMultiLine"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上月抄见:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cornflowerblue"/>
+
+        <EditText
+            android:id="@+id/et_LastData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:focusable="false"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ll_6"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/underlined"/>
+
+    <View
+        android:id="@+id/v0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_2"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/underlined"/>
+
+    <LinearLayout
+        android:id="@+id/ll_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/v0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="抄读状况:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cornflowerblue"/>
+
+        <Spinner
+            android:id="@+id/sp_cbState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/pink"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="水表状况:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cornflowerblue"/>
+
+        <Spinner
+            android:id="@+id/sp_meterState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/pink"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/v1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="红外抄见:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cornflowerblue"/>
+
+        <EditText
+            android:id="@+id/et_IrDAData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:focusable="false"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户状况:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cornflowerblue"/>
+
+        <TextView
+            android:id="@+id/tv_userState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ll_11"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/underlined"/>
+
+    <LinearLayout
+        android:id="@+id/ll_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/v3"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本月实用:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cornflowerblue"/>
+
+        <EditText
+            android:id="@+id/et_thisMouthUserWater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:focusable="false"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上月实用:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cornflowerblue"/>
+
+        <EditText
+            android:id="@+id/et_LastUserWater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:focusable="false"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ll_12"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/underlined"/>
+
+    <Button
+        android:id="@+id/btn_voicemodel"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btn_last"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@id/btn_next"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="语音"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btn_save"
+        android:layout_alignParentRight="true"
+        android:layout_margin="7dp"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="下一只表"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btn_3"
+        android:layout_alignParentRight="true"
+        android:layout_margin="7dp"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="保存"/>
+
+    <Button
+        android:id="@+id/btn_last"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/btn_next"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@id/btn_save"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="上一只表"/>
+
+    <Button
+        android:id="@+id/btn_wbj"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@id/btn_showInput"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="7dp"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="未标记"/>
+
+    <Button
+        android:id="@+id/btn_ybj"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@id/btn_showInput"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="7dp"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="已标记"/>
+
+    <Button
+        android:id="@+id/btn_fh"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="7dp"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="未复核"/>
+
+    <Button
+        android:id="@+id/btn_qxfh"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="7dp"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="已复核"/>
+
+    <Button
+        android:id="@+id/btn_his"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btn_IrDACB"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@id/btn_delete"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="历史数据"/>
+
+    <Button
+        android:id="@+id/btn_fx"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btn_his"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@id/btn_search1"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="报修"/>
+
+    <Button
+        android:id="@+id/btn_IrDACB"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btn_7"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@id/btn_delete"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="红外抄表"/>
+
+    <Button
+        android:id="@+id/btn_showInput"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="7dp"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="隐藏按键"/>
+
+    <Button
+        android:id="@+id/btn_9"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@id/btn_showInput"
+        android:layout_margin="7dp"
+        android:layout_toRightOf="@id/btn_8"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="9"/>
+
+    <Button
+        android:id="@+id/btn_8"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btn_0"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@+id/btn_showInput"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="8"/>
+
+    <Button
+        android:id="@+id/btn_7"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btn_delete"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@+id/btn_8"
+        android:layout_toStartOf="@+id/btn_8"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="7"/>
+
+    <Button
+        android:id="@+id/btn_6"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btn_9"
+        android:layout_margin="7dp"
+        android:layout_toRightOf="@+id/btn_5"
+        android:alpha="0.7"
+
+        android:background="@drawable/selector"
+        android:text="6"/>
+
+    <Button
+        android:id="@+id/btn_5"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btn_8"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@id/btn_showInput"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="5"/>
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btn_7"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@+id/btn_8"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="4"/>
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btn_6"
+        android:layout_margin="7dp"
+        android:layout_toRightOf="@+id/btn_2"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="3"/>
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btn_5"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@+id/btn_showInput"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="2"/>
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btn_4"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@id/btn_2"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="1"/>
+
+    <Button
+        android:id="@+id/btn_0"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@+id/btn_showInput"
+        android:layout_toStartOf="@+id/btn_showInput"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/btn_search1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btn_1"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@id/btn_2"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="查询"/>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@+id/btn_0"
+        android:layout_toStartOf="@+id/btn_0"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="回退"/>
+
+    <Button
+        android:id="@+id/btn_pic"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btn_location"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@id/btn_delete"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="拍照"/>
+    <Button
+        android:id="@+id/btn_video"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/btn_showInput"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@id/btn_last"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="视频上传"/>
+
+    <Button
+        android:id="@+id/btn_location"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@+id/btn_delete"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="水表定位"/>
+
+
+    <TextView
+        android:id="@+id/tv_Msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_3"
+        android:layout_margin="7dp"
+        android:text=""
+        android:textColor="@color/red"/>
+
+
+    <Button
+        android:id="@+id/btn_pic1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@+id/btn_pic2"
+        android:layout_toStartOf="@+id/btn_pic2"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="图一"/>
+
+    <Button
+        android:id="@+id/btn_pic2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@+id/btn_pic3"
+        android:layout_toStartOf="@+id/btn_pic3"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="图二"/>
+
+    <Button
+        android:id="@+id/btn_pic3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@+id/btn_showInput"
+        android:layout_toStartOf="@+id/btn_showInput"
+        android:alpha="0.7"
+        android:background="@drawable/selector"
+        android:text="图三"/>
+
+
+</RelativeLayout>
